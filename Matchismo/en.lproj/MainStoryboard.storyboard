@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Playing Card Game View Controller - Item-->
+        <!--Playing Card Game View Controller - Game-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="PlayingCardGameViewController" sceneMemberID="viewController">
@@ -81,7 +81,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="WSr-kF-rDB"/>
+                    <tabBarItem key="tabBarItem" title="Game" id="WSr-kF-rDB"/>
                     <connections>
                         <outlet property="cardCollectionView" destination="eVU-Uu-LW5" id="Ezq-Zm-dbQ"/>
                         <outlet property="flipsLabel" destination="PBZ-5W-AvJ" id="4Rh-LY-996"/>
@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="-1309" y="-989"/>
         </scene>
-        <!--Game Result View Controller - Item-->
+        <!--Game Result View Controller - Score-->
         <scene sceneID="OEA-kT-zKJ">
             <objects>
                 <viewController id="sNb-N0-3uo" customClass="GameResultViewController" sceneMemberID="viewController">
@@ -160,7 +160,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="msr-U0-ypF"/>
+                    <tabBarItem key="tabBarItem" title="Score" id="msr-U0-ypF"/>
                     <connections>
                         <outlet property="display" destination="hCG-1L-rm7" id="F5v-yg-vmy"/>
                     </connections>

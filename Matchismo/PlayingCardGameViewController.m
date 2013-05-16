@@ -32,8 +32,19 @@
             PlayingCard *playingCard = (PlayingCard *)card;
             playingCardView.rank = playingCard.rank;
             playingCardView.suit = playingCard.suit;
-            playingCardView.faceUp = playingCard.isFaceUp;
             playingCardView.alpha = playingCard.isUnplayable ? 0.3 : 1.0;
+            if (animated && playingCardView.faceUp != playingCard.isFaceUp) {
+                [UIView transitionWithView:playingCardView
+                                  duration:0.5
+                                   options:UIViewAnimationOptionTransitionFlipFromLeft
+                                animations:^{
+                                    playingCardView.faceUp = playingCard.isFaceUp;
+                                }
+                                completion:NULL];
+            } else {
+                playingCardView.faceUp = playingCard.isFaceUp;
+            }
+                
         }
     }
 }
